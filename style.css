@@ -1,107 +1,119 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  header {
-    background-color: #007bff; /* Change to a professional color */
+}
+
+header {
+    background-color: #001233; 
     color: #fff;
     padding: 10px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000; 
-  }
-  
-  header nav ul li a:hover {
-    color: #FFC107; /* Change to desired text hover color */
-    background-color: transparent; /* Change to desired background hover color */
-    text-decoration: underline; /* Add underline on hover */
-  }
-  
-  header nav ul {
+}
+
+header nav ul li a:hover {
+    color: #FFC107; 
+    background-color: transparent; 
+    text-decoration: underline; 
+}
+
+header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  h2 {
+}
+
+h2 {
     width: 100%;
     text-align: center;
     margin: 10px 0 20px;
-    border-top: 3px solid #007bff; /* Change to match header background color */
-    border-bottom: 3px solid #007bff; /* Change to match header background color */
+    border-top: 3px solid #001233; 
+    border-bottom: 3px solid #001233; 
     line-height: 0; 
-  }
-  
-  h2::before, h2::after {
+}
+
+h2::before, h2::after {
     content: "";
     position: absolute;
     top: 50%;
     width: 80%; 
     height: 1px;
-    background-color: #000;
-  }
-  
-  h2::before {
+    background-color: #FF595A; 
+}
+
+h2::before {
     right: 100%; 
-  }
-  
-  h2::after {
+}
+
+h2::after {
     left: 100%; 
-  }
-  
-  h2 span {
-    background: #fff;
+}
+
+h2 span {
+    background: #CAC0B3; 
     padding: 0 10px;
-  }
-  
-  header nav ul li {
+}
+
+header nav ul li {
     display: inline;
     margin-right: 20px;
-  }
-  
-  header nav ul li a {
+}
+
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  main {
+}
+
+main {
     margin-top: 80px; 
     margin-left: 150px;
     margin-bottom: 100px;
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 900px;
     margin-bottom: 20px;
     margin-top: 100px;
     margin: 0 auto;
-  }
-  
-  .section-container {
+}
+
+.section-container {
     padding: 20px;
     margin-bottom: 30px;
-  }
-  
-  .section-container h2 {
+}
+
+.section-container h2 {
     margin-top: 50px;
     margin-bottom: 20px;
-  }
-  
-  .section-container p {
+}
+
+.section-container p {
     margin-bottom: 50px;
-  }
-  
-  .photos-container {
+}
+
+.photos-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 20px;
-  }
-  
-  .photos-container img {
+}
+
+.photos-container img {
     width: 100%;
     height: auto;
     display: block;
-  }
-  
+}
+#spa {
+    direction: rtl;
+    text-align: right;
+}
+
+#spa br {
+    display: block;
+    margin: 10px 0;
+    margin-bottom: 30px;
+}
+h3{
+    text-decoration: underline;
+}
