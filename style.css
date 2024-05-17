@@ -13,16 +13,27 @@ header {
     z-index: 1000; 
 }
 
-header nav ul li a:hover {
-    color: #FFC107; 
-    background-color: transparent; 
-    text-decoration: underline; 
-}
-
 header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #FFC107; 
+    background-color: transparent; 
+    text-decoration: underline; 
 }
 
 h2 {
@@ -32,6 +43,7 @@ h2 {
     border-top: 3px solid #001233; 
     border-bottom: 3px solid #001233; 
     line-height: 0; 
+    position: relative;
 }
 
 h2::before, h2::after {
@@ -56,27 +68,15 @@ h2 span {
     padding: 0 10px;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
 main {
     margin-top: 80px; 
-    margin-left: 150px;
-    margin-bottom: 100px;
+    padding: 20px;
 }
 
 .container {
-    max-width: 900px;
-    margin-bottom: 20px;
-    margin-top: 100px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section-container {
@@ -104,6 +104,7 @@ main {
     height: auto;
     display: block;
 }
+
 #spa {
     direction: rtl;
     text-align: right;
@@ -114,6 +115,27 @@ main {
     margin: 10px 0;
     margin-bottom: 30px;
 }
-h3{
+
+h3 {
     text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
 }
