@@ -3,7 +3,7 @@
 ## Overview
 This website is a personal project dedicated to Albert Assoulin, born in Morocco in 1943. It provides an overview of his life, experiences, and interests. Created by Dan Vaitzman (ID: 318940913), the website offers a glimpse into Albert's background, featuring sections on his life story, curated photos, a personalized playlist, a 'like' feature for favorite content, a QR code for easy access, a Q&A section to engage visitors, and a contact form for inquiries or messages.
 
-#Website URL: Albert Assoulin's Personal Website
+**Website URL:** [Albert Assoulin's Personal Website](https://wed-2023.github.io/318940913/)
 
 ## File Structure
 - `index.html`: The main HTML file containing the structure of the website.
