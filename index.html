@@ -8,23 +8,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Albert Assulin</title>
         <link rel="stylesheet" href="style.css">
-        <script>
-            function clearForm() {
-                var email = document.getElementById("email").value;
-                var message = document.getElementById("message").value;
-                var smiley = document.getElementById("smiley").value;
-                
-                var body = "Email: " + email + "\n\n";
-                body += "Message: " + message + "\n\n";
-                body += "Smiley: " + smiley + "\n\n";
-                
-                window.location.href = "mailto:danvaitzman10@gmail.com?subject=Email&body=" + encodeURIComponent(body);
-                
-                document.getElementById("email").value = "";
-                document.getElementById("message").value = "";
-                document.getElementById("smiley").selectedIndex = 0;
+    <script>
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+            
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            var smiley = document.getElementById("smiley").value;
+            
+            if (email === "" || message === "") {
+                alert("Please fill in all fields.");
+                return;
             }
-        </script>
+
+            var body = message + "\n\n";
+            body += smiley + "\n\n";
+
+            var mailtoLink = "mailto:danvaitzman10@gmail.com?subject=Message from Website&body=" + encodeURIComponent(body);
+            window.location.href = mailtoLink;
+        }
+    </script>
     </head>
 
     <header>
@@ -177,15 +180,15 @@
             <div class="container">
                 <h2><span>Contact Me</span></h2>
                 <p>Feel free to get in touch with me by using the form below. Simply enter your email, write your message, choose an emoji to express your mood, and click "Send" to reach out to me. I look forward to hearing from you!</p>
-                <form action="mailto:danvaitzman10@gmail.com" method="post" enctype="text/plain">
+                <form onsubmit="sendEmail(event)">
                     <label for="email">Your Email:</label><br>
-                    <input type="email" id="email" name="email"><br><br>
+                    <input type="email" id="email" name="email" required><br><br>
                     
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
                     
                     <label for="smiley">Select an Emoji:</label><br>
-                    <select id="smiley" name="smiley">
+                    <select id="smiley" name="smiley" required>
                         <option value="😊">😊 Happy</option>
                         <option value="😄">😄 Excited</option>
                         <option value="😢">😢 Sad</option>
