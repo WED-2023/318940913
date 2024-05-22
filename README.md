@@ -43,14 +43,6 @@ Usage
 3.  **Contact Form**: Fill out the contact form and submit it to send a message.
 4.  **Liking the Page**: Click the like button in the "Like" section to like the related Facebook page.
 
-Future Enhancements
--------------------
-
-*   Add more interactive elements and animations for a richer user experience.
-*   Expand the biography section with more detailed stories and multimedia content.
-*   Implement server-side functionality for form submission and data handling.
-
-
 Contact
 -------
 
